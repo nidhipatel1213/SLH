@@ -1,0 +1,26 @@
+/* Default styles */
+.navbar {
+    /* your default navbar styles */
+  }
+  
+  /* Styles for tablets (devices with width less than 768px) */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      /* tablet-specific styles */
+    }
+    .navbar-menu {
+      display: none; /* Hide desktop menu */
+    }
+    .navbar-hamburger {
+      display: block; /* Show hamburger menu */
+    }
+  }
+  
+  /* Styles for mobile devices (devices with width less than 480px) */
+  @media screen and (max-width: 480px) {
+    .navbar {
+      /* mobile-specific styles */
+    }
+    /* Any other mobile specific styles */
+  }
+  
