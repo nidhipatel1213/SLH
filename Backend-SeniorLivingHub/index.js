@@ -10,6 +10,12 @@ const connectDB = require('./server/database/connection');
 
 const app = express();
 
+app.use(cors({
+    origin: [""],
+    methods: ["POST", "GET"],
+    credentials: true
+}))
+
 app.use(cors());
 
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
